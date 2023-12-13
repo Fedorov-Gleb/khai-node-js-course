@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
 		res.end() //end the response
 	} else {
 		res.write('<h1>Hello World!<h1>') //write a response
-		res.write('<h2>My name Maks<h2>') //write a response
+		res.write('<h2>My name Fedorov Gleb<h2>') //write a response
 		res.end() //end the response
 	}
 })
