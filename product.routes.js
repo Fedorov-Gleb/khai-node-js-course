@@ -21,7 +21,7 @@ router.get('/products/:id', isExistProduct, (request, response) => {
 })
 
 // handle get request for path /products/:brand
-router.get('/products/:brand', blockSpecialBrand, (request, response) => {
+router.get('/products/brand/:brand', blockSpecialBrand, (request, response) => {
 	const { brand } = request.params // Access the brand parameter from the URL
 
 	// Filter products based on the brand parameter
