@@ -1,14 +1,22 @@
 {
-  "name": "khai-node-js-course",
-  "version": "1.0.0",
-  "description": "khai-node-js-course Fedorov Gleb",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+	"name": "khai-node-js-course",
+	"version": "1.0.0",
+	"description": "khai-node-js-course Fedorov Gleb",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "node src/index.js",
+		"migration:generate": "drizzle-kit generate:pg",
+		"migration:push": "drizzle-kit push:pg"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"drizzle-orm": "^0.30.8",
+		"express": "^4.18.2",
+		"pg": "^8.11.5"
+	},
+	"devDependencies": {
+		"drizzle-kit": "^0.20.14"
+	}
 }
